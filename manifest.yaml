@@ -1,0 +1,6 @@
+title: 'Test Title'
+slides:
+  - path: test-mermaid
+    order: 1
+  - path: test-markdown
+    order: 2

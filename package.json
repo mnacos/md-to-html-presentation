@@ -1,0 +1,44 @@
+{
+  "name": "md-to-html-presentation",
+  "version": "1.0.0",
+  "description": "HTML Presentation Build Pipeline",
+  "main": "build.js",
+  "type": "module",
+  "bin": {
+    "presentation-build": "./build.js"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/unit",
+    "test:integration": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/integration"
+  },
+  "keywords": [
+    "presentation",
+    "slides",
+    "markdown",
+    "html",
+    "mermaid"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^4.1.1",
+    "remark": "^15.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-html": "^16.0.1",
+    "unist-util-visit": "^5.1.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {},
+    "testEnvironment": "node"
+  }
+}
